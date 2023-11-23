@@ -1,0 +1,119 @@
+@import url(./global/global.css);
+
+
+.hero .contenedor .pagina-principal {
+    height: 80vh;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    grid-template-areas: 
+    "textos imagen";
+    padding: 1vw 5vw;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2vh;
+}
+
+.hero .contenedor nav {
+    display: grid;
+    justify-items: center;
+}
+
+.hero .contenedor nav img {
+    height: 15vh;
+    width: auto;
+}
+
+.pagina-principal .lado-izq{
+    grid-area: textos;
+}
+
+.pagina-principal .lado-der{
+    grid-area: imagen;
+}
+
+.pagina-principal .lado-izq .cap {
+    display: grid;
+}
+
+.pagina-principal .lado-izq .cap img {
+    height: 10vh;
+    width: auto;
+}
+
+.pagina-principal .lado-izq .texto{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vw;
+}
+
+.pagina-principal .lado-izq .texto .titulo p{
+    font-size: 5vh;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.color-morado{
+    color: #6C63FF;
+}
+
+.mayuscula{
+    font-size: 10vh;
+}
+
+.pagina-principal .lado-izq .texto .subtitulo p {
+    font-size: 3vh;
+}
+
+.pagina-principal .lado-izq .texto .boton button {
+    background-color: #6C63FF;
+    color: #ffffff;
+    font-size: 2.5vh;
+}
+
+.pagina-principal .lado-der .img-central {
+    display: grid;
+
+}
+
+.pagina-principal .lado-der .img-central img {
+    height: 50vh;
+    width: auto;
+}
+
+.hero .contenedor .aliados .contenido{
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.hero .contenedor .aliados .contenido{
+    height: 80vh;
+    width: 80vw;
+    text-align: center;
+}
+
+.hero .contenedor .aliados .contenido .titulo h1{
+    color: black;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+.hero .contenedor .aliados .titulo h1{
+    color: #ffffff;
+}
+
+.aliados .contenido .universidades .universidad{
+    display: flex;
+    column-gap: 5vw;
+}
+
+.aliados .contenido .universidades .universidad .texto p{
+    font-size: 2.2vw;
+    font-weight: bold;
+}
+
+.aliados .contenido .universidades .universidad .imagen img{
+    height: 15vh;
+    width: auto;
+}
+
