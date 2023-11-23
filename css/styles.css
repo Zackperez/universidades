@@ -102,6 +102,10 @@
     color: #ffffff;
 }
 
+.aliados .contenido .universidades{
+    
+}
+
 .aliados .contenido .universidades .universidad{
     display: flex;
     column-gap: 5vw;
