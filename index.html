@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Inicio</title>
+    <link rel="shortcut icon" href="./img/equiti.ico" type="image/x-icon">
+    <title>Descuento Educación Equiti</title>
 </head>
 
 <body>
@@ -30,7 +32,7 @@
                         </div>
 
                         <div class="boton">
-                            <button>¡Quiero saber más!</button>
+                            <a href="#formulario"><button>¡Quiero saber más!</button></a>
                         </div>
                     </div>
                 </div>
@@ -49,28 +51,84 @@
                         <h1>¡Conoce a nuestros aliados!</h1>
                     </div>
                     <div class="universidades">
-                        <div class="universidad">
-                            <div class="imagen">
-                                <img src="./img/aliados/arboleda.png" alt="">
+                        <div class="contenedor-universidades">
+                            <div class="caja-grande1 caja">
+                                <div class="titulo">
+                                    <p>Universidad autonoma del caribe</p>
+                                </div>
+                                <div class="imagen">
+                                    <img src="./img/aliados/autonoma.jpg" alt="">
+                                </div>
                             </div>
-                            <div class="texto">
-                                <p>Sergio Arboleda</p>
+                            <div class="caja-grande2 caja">
+                                <div class="titulo">
+                                    <p>Universidad Sergio Arboleda</p>
+                                </div>
+                                <div class="imagen">
+                                    <img src="./img/aliados/arboleda.png" alt="">
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="universidad">
-                            <div class="texto">
-                                <p>Universidad autonoma</p>
+                            <div class="caja-mediana caja">
+                                <div class="titulo">
+                                    <p>Universidad libre</p>
+                                </div>
+                                <div class="imagen">
+                                    <img src="./img/aliados/libre.png" alt="">
+                                </div>
                             </div>
-                            <div class="imagen">
-                                <img src="./img/aliados/autonoma.jpg" alt="">
+                            <div class="caja-peque1 caja">
+                                <div class="titulo">
+                                    <p>Corporación Universitaria Litoral</p>
+                                </div>
+                                <div class="imagen">
+                                    <img src="./img/aliados/litoral.png" alt="">
+                                </div>
+                            </div>
+                            <div class="caja-peque2 caja">
+                                <div class="titulo">
+                                    <p>CAC EUROCENTRES</p>
+                                </div>
+                                <div class="imagen">
+                                    <img src="./img/aliados/cac.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="caja-peque3 caja">
+                                <div class="titulo">
+                                    <p>Ponte italiano</p>
+                                </div>
+                                <div class="imagen">
+                                    <img src="./img/aliados/ponte-italiano.jpg" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
+            </section>
+
+            <section class="formulario" id="formulario">
+                <div class="container-formulario">
+                    <div class="titulo-formulario">
+                        <h2 class="titulo__formulario">Formulario registro</h2>
+                    </div>
+                    <div class="contenido-formulario">
+                        <div class="formulario-contenido" id="formulario">
+
+                            <label>Nombre: </label>
+                            <input type="text" placeholder="Nombre" id="nombre" />
+                            <label>Apellido: </label>
+                            <input type="text" placeholder="Apellido" id="apellido" />
+                            <label>Correo electronico: </label>
+                            <input type="email" name="email" id="correo" placeholder="Correo electronico" />
+                            <label>Telefono: </label>
+                        </div>
+                        <div class="botones-formulario">
+                            <button type="submit" id="enviar">Enviar información <i
+                                    class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+
             </section>
         </div>
     </div>

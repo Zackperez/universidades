@@ -6,8 +6,8 @@
     display: grid;
     place-content: center;
     place-items: center;
-    grid-template-areas: 
-    "textos imagen";
+    grid-template-areas:
+        "textos imagen";
     padding: 1vw 5vw;
     grid-template-columns: 1fr 1fr;
     column-gap: 2vh;
@@ -23,11 +23,11 @@
     width: auto;
 }
 
-.pagina-principal .lado-izq{
+.pagina-principal .lado-izq {
     grid-area: textos;
 }
 
-.pagina-principal .lado-der{
+.pagina-principal .lado-der {
     grid-area: imagen;
 }
 
@@ -40,23 +40,23 @@
     width: auto;
 }
 
-.pagina-principal .lado-izq .texto{
+.pagina-principal .lado-izq .texto {
     display: flex;
     flex-direction: column;
     row-gap: 1vw;
 }
 
-.pagina-principal .lado-izq .texto .titulo p{
+.pagina-principal .lado-izq .texto .titulo p {
     font-size: 5vh;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.color-morado{
+.color-morado {
     color: #6C63FF;
 }
 
-.mayuscula{
+.mayuscula {
     font-size: 10vh;
 }
 
@@ -72,7 +72,7 @@
 
 .pagina-principal .lado-der .img-central {
     display: grid;
-
+    place-items: center;
 }
 
 .pagina-principal .lado-der .img-central img {
@@ -80,44 +80,172 @@
     width: auto;
 }
 
-.hero .contenedor .aliados .contenido{
+.hero .contenedor .aliados .contenido {
     display: grid;
     justify-content: center;
     margin: 0 auto;
 }
 
-.hero .contenedor .aliados .contenido{
-    height: 80vh;
+.hero .contenedor .aliados .contenido {
+    height: auto;
     width: 80vw;
+    padding: 2vw 0;
     text-align: center;
 }
 
-.hero .contenedor .aliados .contenido .titulo h1{
+.hero .contenedor .aliados .contenido .titulo h1 {
     color: black;
     font-weight: bold;
     font-size: 3vw;
 }
 
-.hero .contenedor .aliados .titulo h1{
+.hero .contenedor .aliados .titulo h1 {
     color: #ffffff;
 }
 
 .aliados .contenido .universidades{
-    
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vh;
 }
 
-.aliados .contenido .universidades .universidad{
+.aliados .contenido .universidades .universidad {
     display: flex;
     column-gap: 5vw;
 }
 
-.aliados .contenido .universidades .universidad .texto p{
+.aliados .contenido .universidades .universidad .texto p {
     font-size: 2.2vw;
     font-weight: bold;
 }
 
-.aliados .contenido .universidades .universidad .imagen img{
-    height: 15vh;
+.aliados .contenido .universidades .contenedor-universidades .caja .imagen img {
+    height: 30vh;
     width: auto;
 }
 
+.alidos .contenido .universidades .contenedor-universidades{
+    display: grid;
+    grid-template-areas: 
+    "grande1 mediana peque1"
+    "grande2 peque2 peque3";
+}
+
+.alidos .contenido .universidades .contenedor-universidades .caja-grande1{
+    grid-area: grande1;
+}
+
+.alidos .contenido .universidades .contenedor-universidades .caja-mediana{
+    grid-area: mediana;
+}
+
+.alidos .contenido .universidades .contenedor-universidades .caja-peque1{
+    grid-area: peque1;
+}
+
+.alidos .contenido .universidades .contenedor-universidades .caja-grande2{
+    grid-area: grande2;
+}
+
+.alidos .contenido .universidades .contenedor-universidades .caja-peque2{
+    grid-area: peque2;
+}
+
+.alidos .contenido .universidades .contenedor-universidades .caja-peque3{
+    grid-area: peque3;
+}
+
+.contenido-derecha-texto p {
+    text-align: center;
+}
+
+.formulario{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.container-formulario {
+    grid-area: formulario;
+}
+
+.hero .contenedor .formulario .container-formulario {
+    display: grid;
+    grid-template-areas:
+        "titulo"
+        "contenido";
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: 40vw;
+    padding: 15px;
+}
+
+.titulo-formulario {
+    grid-area: titulo;
+}
+
+.contenido-formulario {
+    grid-area: contenido;
+    display: grid;
+    grid-template-areas:
+        "formulario"
+        "botones";
+    justify-content: center;
+    align-items: center;
+    height: 83vh;
+    overflow: auto;
+
+}
+
+.formulario-contenido {
+    grid-area: formulario;
+}
+
+.botones-formulario {
+    grid-area: botones;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.titulo__formulario {
+    font-size: 2.2vw;
+    text-align: center;
+}
+
+.contenido-formulario label {
+    padding-left: 15px;
+}
+
+.contenido-formulario input {
+    margin: 10px;
+    width: auto;
+    height: 5vh;
+    width: 35vw;
+    padding-left: 10px;
+    border: transparent;
+    border-bottom: 1px solid #191919;
+    font-size: 1.2vw;
+}
+
+.contenido-formulario input:focus {
+    outline: none;
+}
+
+.contenido-formulario select {
+    margin: 15px;
+    width: auto;
+    height: 5vh;
+    width: 36vw;
+    padding-left: 10px;
+    border: transparent;
+    border-bottom: 1px solid #191919;
+    font-size: 1.2vw;
+}
+
+.contenido-formulario select:focus {
+    outline: none;
+}
