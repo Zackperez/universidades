@@ -1,5 +1,13 @@
 @import url(./global/global.css);
-
+.swal-custom-confirm-button {
+    background-color: #6C63FF;
+    color: #ffffff;
+  }
+  
+  .swal-custom-cancel-button {
+    background-color: #d33;
+    color: #ffffff;
+  }
 .hero nav {
     background-color: #191919;
 }
@@ -16,22 +24,30 @@
 
 
 .hero .contenedor .pagina-principal {
-    height: 75vh;
     display: grid;
     grid-template-areas:
-        "textos imagen";
+        "textos imagen"
+        "ola ola";
     column-gap: 2vh;
     justify-content: center;
     align-content: center;
-    padding: 0 5vw;
+    padding: 5vw 0;
+    height: 100vh;
 }
 
 .pagina-principal .ola {
     grid-area: ola;
-}
+    height: 40vh; 
+    overflow: hidden;
+   
 
-.pagina-principal .ola img {
-    height: 100vh;
+}
+.pagina-principal .ola svg {
+    width: 100%; 
+    height: auto;
+}
+.pagina-principal img {
+    height: 20vh;
 }
 
 .hero .contenedor nav {
@@ -46,10 +62,12 @@
 
 .pagina-principal .lado-izq {
     grid-area: textos;
+    padding: 0 5vw;
 }
 
 .pagina-principal .lado-der {
     grid-area: imagen;
+    padding: 0 5vw;
 }
 
 .pagina-principal .lado-izq .cap {
@@ -89,6 +107,9 @@
     background-color: #6C63FF;
     color: #ffffff;
     font-size: 2.5vh;
+}
+.pagina-principal .lado-izq .texto .boton button:hover{
+    background-color: #8781fc;
 }
 
 .pagina-principal .lado-der .img-central {
@@ -275,4 +296,12 @@
 
 .contenido-formulario select:focus {
     outline: none;
+}
+.botones-formulario button{
+    background-color: #6C63FF;
+    color: white;
+    width: 15vw;
+}
+.botones-formulario button:hover{
+    background-color: #8781fc;
 }
