@@ -1,16 +1,37 @@
 @import url(./global/global.css);
 
+.hero nav {
+    background-color: #191919;
+}
+
+.hero nav .logo-equiti {
+    display: flex;
+    justify-content: center;
+}
+
+.hero nav .logo-equiti img {
+    height: 10vh;
+    width: auto;
+}
+
 
 .hero .contenedor .pagina-principal {
-    height: 80vh;
+    height: 75vh;
     display: grid;
-    place-content: center;
-    place-items: center;
     grid-template-areas:
         "textos imagen";
-    padding: 1vw 5vw;
-    grid-template-columns: 1fr 1fr;
     column-gap: 2vh;
+    justify-content: center;
+    align-content: center;
+    padding: 0 5vw;
+}
+
+.pagina-principal .ola {
+    grid-area: ola;
+}
+
+.pagina-principal .ola img {
+    height: 100vh;
 }
 
 .hero .contenedor nav {
@@ -82,14 +103,6 @@
 
 .hero .contenedor .aliados .contenido {
     display: grid;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-.hero .contenedor .aliados .contenido {
-    height: auto;
-    width: 80vw;
-    padding: 2vw 0;
     text-align: center;
 }
 
@@ -99,11 +112,7 @@
     font-size: 3vw;
 }
 
-.hero .contenedor .aliados .titulo h1 {
-    color: #ffffff;
-}
-
-.aliados .contenido .universidades{
+.aliados .contenido .universidades {
     display: flex;
     flex-direction: column;
     row-gap: 10vh;
@@ -119,47 +128,65 @@
     font-weight: bold;
 }
 
+.aliados .contenido .universidades .contenedor-universidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    row-gap: 2vw;
+    column-gap: 2vw;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw 0;
+}
+
+.aliados .contenido .universidades .contenedor-universidades .caja {
+    background-color: #191919;
+    border-radius: 1vw;
+    width: 40vw;
+    display: grid;
+    grid-template-areas:
+        "imagen descuento"
+        "imagen boton";
+    height: 40vh;
+    color: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.aliados .contenido .universidades .contenedor-universidades .caja .imagen {
+    grid-area: imagen;
+}
+
+.aliados .contenido .universidades .contenedor-universidades .caja .boton {
+    grid-area: boton;
+}
+
+.aliados .contenido .universidades .contenedor-universidades .caja .titulo {
+    grid-area: descuento;
+    font-size: 5vw;
+    border-radius: 50%;
+    padding: 1vw;
+    font-weight: bold;
+}
+
+.aliados .contenido .universidades .contenedor-universidades .caja .boton button {
+    background-color: #6C63FF;
+    color: #ffffff;
+    width: 15vw;
+}
+
 .aliados .contenido .universidades .contenedor-universidades .caja .imagen img {
     height: 30vh;
     width: auto;
-}
-
-.alidos .contenido .universidades .contenedor-universidades{
-    display: grid;
-    grid-template-areas: 
-    "grande1 mediana peque1"
-    "grande2 peque2 peque3";
-}
-
-.alidos .contenido .universidades .contenedor-universidades .caja-grande1{
-    grid-area: grande1;
-}
-
-.alidos .contenido .universidades .contenedor-universidades .caja-mediana{
-    grid-area: mediana;
-}
-
-.alidos .contenido .universidades .contenedor-universidades .caja-peque1{
-    grid-area: peque1;
-}
-
-.alidos .contenido .universidades .contenedor-universidades .caja-grande2{
-    grid-area: grande2;
-}
-
-.alidos .contenido .universidades .contenedor-universidades .caja-peque2{
-    grid-area: peque2;
-}
-
-.alidos .contenido .universidades .contenedor-universidades .caja-peque3{
-    grid-area: peque3;
 }
 
 .contenido-derecha-texto p {
     text-align: center;
 }
 
-.formulario{
+.formulario {
     display: grid;
     justify-content: center;
     justify-items: center;
