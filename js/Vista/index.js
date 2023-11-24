@@ -16,8 +16,8 @@ const Vista ={
             text: 'Deseas ingresar los datos a la BD',
             icon: 'warning',
             showCancelButton: true,
-            confirmButtonClass: 'swal-custom-confirm-button', 
-            cancelButtonClass: 'swal-custom-cancel-button',  
+            // confirmButtonClass: 'swal-custom-confirm-button', 
+            // cancelButtonClass: 'swal-custom-cancel-button',  
             confirmButtonText: 'Aceptar',
             cancelButtonText: 'Cancelar',
             reverseButtons: true
@@ -55,30 +55,8 @@ const Vista ={
               );
             }
           });
-        
     })
-
     },
-    transitionSmooth: function () {
-       
-        var smoothScrollLinks = document.getElementsByClassName('smooth-scroll');
-    
-        // Itera sobre los enlaces
-        for (var i = 0; i < smoothScrollLinks.length; i++) {
-          // Agrega un evento de clic a cada enlace
-          smoothScrollLinks[i].addEventListener('click', function (event) {
-            event.preventDefault(); // Evita el comportamiento predeterminado del enlace
-    
-            // Obtiene el destino del enlace a través del atributo href
-            var target = this.getAttribute('href');
-    
-            // Utiliza el método 'scrollIntoView' para desplazarse suavemente hacia el destino
-            document.querySelector(target).scrollIntoView({
-              behavior: 'smooth'
-            });
-          });
-        }
-      },
       mostrarMensajeError(mensaje) {
         Swal.fire({
           icon: 'error',
@@ -86,7 +64,6 @@ const Vista ={
           text: mensaje,
         })
       },
-    
       mostrarAlertaSatisfactorio(mensaje) {
         Swal.fire({
           position: 'center',
@@ -101,7 +78,8 @@ export default Vista
 document.addEventListener('DOMContentLoaded', function () {
   
     /*CONTROLADOR*/
+    Controlador.transitionSmooth();
     Vista.registrarUsuario();
-    Vista.transitionSmooth();
+   
   
   })
