@@ -1,11 +1,14 @@
 @import url(./global/global.css);
-
-.swal-custom-confirm-button {
+.btn{
+   margin: 20px;
+   width: 12vw;
+}
+.btn-success {
     background-color: #6C63FF;
     color: #ffffff;
 }
 
-.swal-custom-cancel-button {
+.btn-danger {
     background-color: #d33;
     color: #ffffff;
 }
@@ -83,12 +86,14 @@
 
 .pagina-principal .lado-izq {
     grid-area: textos;
-    padding: 2vw 5vw;
+    padding: 0vw 5vw;
+    margin-top: 10vh;
 }
 
 .pagina-principal .lado-der {
     grid-area: imagen;
-    padding: 2vw 5vw;
+    padding: 0vw 5vw;
+    margin-top: 10vh;
 }
 
 .pagina-principal .lado-izq .cap {
@@ -143,18 +148,33 @@
     height: 50vh;
     width: auto;
 }
-
+/*Seccion Tutorial*/
 .hero .contenedor .tutorial{
-    display: flex;
+    display: grid;
+    grid-template-areas: 
+    "titulo tutorial"
+    "ola ola";
     padding: 0 5vw;
     align-items: center;
-    height: 50vh;
+    height: 67vh;
     justify-content: center;
     background-color: #6C63FF;
 
 }
 
+.hero .contenedor .tutorial .ola2 {
+    grid-area: ola;
+    height: 40vh; 
+    overflow: hidden;
+    width: 98.9vw;
+
+}
+.hero .contenedor .tutorial .ola2 svg {
+    width: 100%; 
+    height: auto;
+}
 .hero .contenedor .tutorial .cuadros{
+    grid-area: tutorial;
     display: flex;
     column-gap: 2vw;
 }
@@ -177,8 +197,7 @@
 
 }
 
-
-
+/*Seccion Aliados*/
 .hero .contenedor .aliados .contenido {
     display: grid;
     text-align: center;
@@ -257,7 +276,7 @@
 
 .aliados .contenido .universidades .contenedor-universidades .caja .imagen img {
     height: 30vh;
-    width: auto;
+    width: 15vw;
 }
 
 .contenido-derecha-texto p {

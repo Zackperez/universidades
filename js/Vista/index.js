@@ -3,11 +3,6 @@ const Vista = {
   registrarUsuario() {
     const buttoRegistrar = document.getElementById('enviar');
     buttoRegistrar.addEventListener('click', () => {
-      const nombre = document.getElementById('nombre').value;
-      const apellido = document.getElementById('apellido').value;
-      const correo = document.getElementById('correo').value;
-      const telefono = document.getElementById('telefono').value;
-
       const swalWithBootstrapButtons = Swal.mixin({
         customClass: {
           confirmButton: 'btn btn-success',
@@ -15,7 +10,6 @@ const Vista = {
         },
         buttonsStyling: false
       })
-
       swalWithBootstrapButtons.fire({
         title: '¿Estás seguro?',
         text: 'Deseas ingresar los datos a la BD',
@@ -29,20 +23,15 @@ const Vista = {
             </div>
             `,
         showCancelButton: true,
-        confirmButtonClass: 'swal-custom-confirm-button',
-        cancelButtonClass: 'swal-custom-cancel-button',
         confirmButtonText: 'Aceptar',
         cancelButtonText: 'Cancelar',
         reverseButtons: true
       }).then((result) => {
         if (result.isConfirmed) {
-
           const nombre = document.getElementById('nombre').value;
           const apellido = document.getElementById('apellido').value;
           const correo = document.getElementById('correo').value;
           const telefono = document.getElementById('telefono').value;
-
-
           // Verificar campos vacíos
           if (nombre === '' || apellido === '' || correo === '' || telefono === '') {
             Swal.fire({
@@ -52,9 +41,7 @@ const Vista = {
             });
             return;
           }
-
           Controlador.insertarDatos(nombre, apellido, correo, telefono);
-
           document.getElementById('nombre').value = '';
           document.getElementById('apellido').value = '';
           document.getElementById('correo').value = '';
@@ -68,29 +55,7 @@ const Vista = {
           );
         }
       });
-
     })
-
-  },
-  transitionSmooth: function () {
-
-    var smoothScrollLinks = document.getElementsByClassName('smooth-scroll');
-
-    // Itera sobre los enlaces
-    for (var i = 0; i < smoothScrollLinks.length; i++) {
-      // Agrega un evento de clic a cada enlace
-      smoothScrollLinks[i].addEventListener('click', function (event) {
-        event.preventDefault(); // Evita el comportamiento predeterminado del enlace
-
-        // Obtiene el destino del enlace a través del atributo href
-        var target = this.getAttribute('href');
-
-        // Utiliza el método 'scrollIntoView' para desplazarse suavemente hacia el destino
-        document.querySelector(target).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    }
   },
   mostrarMensajeError(mensaje) {
     Swal.fire({
@@ -114,7 +79,8 @@ export default Vista
 document.addEventListener('DOMContentLoaded', function () {
 
   /*CONTROLADOR*/
-  Vista.registrarUsuario();
-  Vista.transitionSmooth();
+
+  Controlador.transitionSmooth();
+  Controlador.clickBoton()
 
 })

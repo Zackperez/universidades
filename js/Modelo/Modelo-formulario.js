@@ -1,7 +1,6 @@
-import config from "../supabase/config.js";
-
+import config from '../supabase/config.js'
 const Modelo = {
-    async registroUsuarios(nombre, apellido, correo, telefono){
+    async registroDatos(nombre, apellido, correo, telefono){
         const datos_insertar = {
              nombres: nombre,
              apellidos: apellido,

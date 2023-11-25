@@ -20,15 +20,15 @@
             </div>
 
             <div class="enlaces">
-                <a href="">Inicio</a>
-                <a href="#aliados">Descuentos</a>
-                <a href="#formulario">Contacto</a>
+                <a href="#inicio" class="smooth-scroll">Inicio</a>
+                <a href="#aliados" class="smooth-scroll">Descuentos</a>
+                <a href="#formulario" class="smooth-scroll">Contacto</a>
             </div>
         </nav>
 
         <div class="contenedor">
 
-            <section class="pagina-principal">
+            <section class="pagina-principal" id="inicio">
                 <div class="ola">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                         <path fill="#6C63FF" fill-opacity="1"
@@ -72,7 +72,7 @@
                 </div>
             </section>
 
-            <section class = "tutorial">
+            <section class="tutorial">
                 <div class="titulo">
                     <h2>¿Cómo obtener los descuentos?</h2>
                 </div>
@@ -113,9 +113,15 @@
                         </div>
                     </div>
                 </div>
+                <div class="ola2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 290">
+                        <path fill="#FFFFFF" fill-opacity="1"
+                            d="M0,160L48,149.3C96,139,192,117,288,138.7C384,160,480,224,576,218.7C672,213,768,139,864,128C960,117,1056,171,1152,170.7C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                        </path>
+                    </svg>
+                </div>  
+
             </section>
-
-
             <section class="aliados" id = "aliados">
                 <div class="contenido">
                     <div class="titulo">
@@ -240,12 +246,12 @@
             </div>
         </footer>
     </div>
-
+    <script src="https://kit.fontawesome.com/1a5bcd4a97.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/Vista/index.js", type="module"></script>
 </body>
-<script src="https://kit.fontawesome.com/1a5bcd4a97.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script type="module" src="./js/Vista/index.js"></script>
+
 
 </html>
