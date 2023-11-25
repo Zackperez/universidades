@@ -1,14 +1,18 @@
 @import url(./global/global.css);
+
 .swal-custom-confirm-button {
     background-color: #6C63FF;
     color: #ffffff;
-  }
-  
-  .swal-custom-cancel-button {
+}
+
+.swal-custom-cancel-button {
     background-color: #d33;
     color: #ffffff;
-  }
+}
+
 .hero nav {
+    position: fixed;
+    width: 90vw;
     background-color: #191919;
 }
 
@@ -24,6 +28,7 @@
 
 
 .hero .contenedor .pagina-principal {
+    padding: 5vw 0 0 0;
     display: grid;
     grid-template-areas:
         "textos imagen"
@@ -35,15 +40,17 @@
 
 .pagina-principal .ola {
     grid-area: ola;
-    height: 40vh; 
+    height: 40vh;
     overflow: hidden;
-   
+
 
 }
+
 .pagina-principal .ola svg {
-    width: 100%; 
+    width: 100%;
     height: auto;
 }
+
 .pagina-principal img {
     height: 20vh;
 }
@@ -60,17 +67,17 @@
     height: 10vh;
 }
 
-.hero .menu-principal .enlaces{
+.hero .menu-principal .enlaces {
     display: flex;
     column-gap: 2vw;
 }
 
-.hero .menu-principal .enlaces a{
+.hero .menu-principal .enlaces a {
     color: #ffffff;
     font-size: 1.5vw;
 }
 
-.hero .menu-principal .enlaces a:hover{
+.hero .menu-principal .enlaces a:hover {
     color: #6C63FF;
 }
 
@@ -122,7 +129,8 @@
     color: #ffffff;
     font-size: 2.5vh;
 }
-.pagina-principal .lado-izq .texto .boton button:hover{
+
+.pagina-principal .lado-izq .texto .boton button:hover {
     background-color: #8781fc;
 }
 
@@ -136,10 +144,44 @@
     width: auto;
 }
 
+.hero .contenedor .tutorial{
+    display: flex;
+    padding: 0 5vw;
+    align-items: center;
+    height: 50vh;
+    justify-content: center;
+    background-color: #6C63FF;
+
+}
+
+.hero .contenedor .tutorial .cuadros{
+    display: flex;
+    column-gap: 2vw;
+}
+
+.hero .contenedor .tutorial .cuadros .cuadro{
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    width: 20vw;
+    height: 25vh;
+    background-color: #f2f2f2;
+    border-radius: 0.5vw;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .contenedor .tutorial .cuadros .cuadro .cabecera{
+    font-size: 1.5vw;
+
+}
+
+
+
 .hero .contenedor .aliados .contenido {
     display: grid;
     text-align: center;
-    background-color: #6C63FF;
 }
 
 .hero .contenedor .aliados .contenido .titulo h1 {
@@ -237,8 +279,8 @@
     grid-template-areas:
         "imagen1 titulo imagen3"
         "imagen2 contenido imagen4";
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 2vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2vw;
     background-color: rgb(255, 255, 255);
     width: 90vw;
     padding: 5vw 0;
@@ -312,16 +354,18 @@
 .contenido-formulario select:focus {
     outline: none;
 }
-.botones-formulario button{
+
+.botones-formulario button {
     background-color: #6C63FF;
     color: white;
     width: 15vw;
 }
-.botones-formulario button:hover{
+
+.botones-formulario button:hover {
     background-color: #8781fc;
 }
 
-.hero footer .contenedor{
+.hero footer .contenedor {
     display: flex;
     flex-direction: column;
     padding: 2vw;
@@ -331,21 +375,21 @@
     justify-content: center;
 }
 
-.hero footer .contenedor .redes{
+.hero footer .contenedor .redes {
     display: flex;
     column-gap: 1vw;
 }
 
-.hero footer .contenedor .redes i{
+.hero footer .contenedor .redes i {
     cursor: pointer;
     font-size: 1.5vw;
     color: gray;
 }
 
-.hero footer .contenedor .logo .imagen{
+.hero footer .contenedor .logo .imagen {
     display: flex;
 }
 
-.hero footer .contenedor .logo .imagen img{
+.hero footer .contenedor .logo .imagen img {
     height: 10vh;
 }
