@@ -74,12 +74,20 @@ const Vista = {
       timer: 1500
     })
   },
+  motrarElmentosPagina: function () {
+    const date = new Date();
+    const año = date.getFullYear();
+    const footer = document.getElementById("contenido-footer");
+    const contenidoFooter = document.createElement("span");
+    contenidoFooter.innerHTML = `<p id="texto_fecha"> &copy Grupo Equiti - ${año}</p>`;
+    footer.appendChild(contenidoFooter);
+  },
 }
 export default Vista
 document.addEventListener('DOMContentLoaded', function () {
 
   /*CONTROLADOR*/
-
+  Vista.motrarElmentosPagina()
   Controlador.transitionSmooth();
   Controlador.clickBoton()
 

@@ -1,4 +1,8 @@
 @import url(./global/global.css);
+#texto_fecha{
+    color: white;
+    font-weight: bold;
+}
 .btn{
    margin: 20px;
    width: 12vw;
