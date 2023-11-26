@@ -151,11 +151,11 @@
 
 /*Seccion Tutorial*/
 
-.hero .contenedor .tutorial{
+.hero .contenedor .tutorial {
     display: grid;
-    grid-template-areas: 
-    "contenido"
-    "ola";
+    grid-template-areas:
+        "contenido"
+        "ola";
 }
 
 .hero .contenedor .tutorial .contenido {
@@ -413,4 +413,133 @@
 
 .hero footer .contenedor .logo .imagen img {
     height: 10vh;
+}
+
+@media (max-width: 648px) {
+
+    .hero .menu-principal {
+        height: 10vh;
+    }
+
+    .hero .menu-principal .logo-equiti img {
+        height: 8vh;
+    }
+
+    .hero .menu-principal .enlaces a {
+        font-size: 2.2vh;
+    }
+
+    .hero .contenedor .pagina-principal {
+        grid-template-areas:
+            "textos"
+            "imagen"
+            "ola";
+    }
+
+    .pagina-principal .lado-der .img-central img {
+        height: 30vh;
+    }
+
+    .pagina-principal .lado-izq .texto .boton button {
+        padding: 2vh 8vw;
+        font-size: 2.4vh;
+    }
+
+    .pagina-principal .ola {
+        display: grid;
+        height: 10vh;
+    }
+
+    .hero .contenedor .tutorial .contenido {
+        grid-template-areas:
+            "titulo"
+            "tutorial";
+        justify-items: center;
+        height: auto;
+        padding: 5vh 0;
+    }
+
+    .tutorial .contenido .titulo {
+        text-align: center;
+    }
+
+    .tutorial .contenido .titulo h2 {
+        font-size: 5vh;
+    }
+
+    .hero .contenedor .tutorial .cuadros {
+        flex-direction: column;
+        row-gap: 5vw;
+    }
+
+    .hero .contenedor .tutorial .cuadros .cuadro {
+        height: auto;
+        padding: 5vw;
+        width: 60vw;
+        min-height: 30vh;
+    }
+
+    .hero .contenedor .tutorial .cuadros .cuadro .cabecera h3 {
+        font-size: 8vw;
+    }
+
+    .hero .contenedor .tutorial .cuadros .cuadro .cuerpo p {
+        font-size: 2.5vh;
+    }
+
+    .hero .contenedor .tutorial .cuadros .cuadro .footer a {
+        background-color: #6C63FF;
+        padding: 2vh 8vw;
+        font-size: 2.3vh;
+        color: #ffffff;
+    }
+
+    .hero .contenedor .aliados .contenido .titulo h1 {
+        font-size: 5vh;
+    }
+
+    .aliados .contenido .universidades .contenedor-universidades {
+        flex-direction: column;
+    }
+
+    .aliados .contenido .universidades .contenedor-universidades .caja {
+        width: 70vw;
+        height: 60vh;
+        grid-template-areas: 
+        "descuento"
+        "imagen"
+        "boton";
+        padding: 5vw;
+    }
+
+    .aliados .contenido .universidades .contenedor-universidades .caja .titulo p{
+        font-size: 5vh;
+    }
+
+    .aliados .contenido .universidades .contenedor-universidades .caja .imagen img {
+        width: 55vw;
+    }
+
+    .aliados .contenido .universidades .contenedor-universidades .caja .boton button {
+        width: 40vw;
+        height: 5vh;
+        font-size: 2.2vh;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
