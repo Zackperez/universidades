@@ -9,7 +9,7 @@ const Modelo = {
          }
          const rest = await axios({
              method: 'POST',
-             url: 'https://xjztrplrkyssesmkzaae.supabase.co/rest/v1/Usuarios-Educacion',
+             url: 'https://upcjwblcpmstvfwedjvt.supabase.co/rest/v1/Usuarioseducacion',
              data: datos_insertar,
              headers: config.headers
          });
