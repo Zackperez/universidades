@@ -2,14 +2,14 @@ import config from '../supabase/config.js'
 const Modelo = {
     async registroDatos(nombre, apellido, correo, telefono){
         const datos_insertar = {
-             nombres: nombre,
-             apellidos: apellido,
+             nombre: nombre,
+             apellido: apellido,
              correo: correo,
-             telefono: telefono,
+             celular: telefono,
          }
          const rest = await axios({
              method: 'POST',
-             url: 'https://upcjwblcpmstvfwedjvt.supabase.co/rest/v1/Usuarioseducacion',
+             url: 'https://xcxfttbcteqauszdyhrw.supabase.co/rest/v1/usuarios',
              data: datos_insertar,
              headers: config.headers
          });

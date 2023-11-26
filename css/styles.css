@@ -1,12 +1,15 @@
 @import url(./global/global.css);
-#texto_fecha{
+
+#texto_fecha {
     color: white;
     font-weight: bold;
 }
-.btn{
-   margin: 20px;
-   width: 12vw;
+
+.btn {
+    margin: 20px;
+    width: 12vw;
 }
+
 .btn-success {
     background-color: #6C63FF;
     color: #ffffff;
@@ -49,8 +52,6 @@
     grid-area: ola;
     height: 40vh;
     overflow: hidden;
-
-
 }
 
 .pagina-principal .ola svg {
@@ -152,12 +153,13 @@
     height: 50vh;
     width: auto;
 }
+
 /*Seccion Tutorial*/
-.hero .contenedor .tutorial{
+.hero .contenedor .tutorial {
     display: grid;
-    grid-template-areas: 
-    "titulo tutorial"
-    "ola ola";
+    grid-template-areas:
+        "titulo tutorial"
+        "ola ola";
     padding: 0 5vw;
     align-items: center;
     height: 67vh;
@@ -168,22 +170,22 @@
 
 .hero .contenedor .tutorial .ola2 {
     grid-area: ola;
-    height: 40vh; 
-    overflow: hidden;
-    width: 98.9vw;
-
+    height: 40vh;
+    width: 100vw;
 }
+
 .hero .contenedor .tutorial .ola2 svg {
-    width: 100%; 
+    width: 100%;
     height: auto;
 }
-.hero .contenedor .tutorial .cuadros{
+
+.hero .contenedor .tutorial .cuadros {
     grid-area: tutorial;
     display: flex;
     column-gap: 2vw;
 }
 
-.hero .contenedor .tutorial .cuadros .cuadro{
+.hero .contenedor .tutorial .cuadros .cuadro {
     display: flex;
     flex-direction: column;
     padding: 1vw;
@@ -196,7 +198,7 @@
     text-align: center;
 }
 
-.hero .contenedor .tutorial .cuadros .cuadro .cabecera{
+.hero .contenedor .tutorial .cuadros .cuadro .cabecera {
     font-size: 1.5vw;
 
 }
