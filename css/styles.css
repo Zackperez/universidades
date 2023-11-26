@@ -415,7 +415,7 @@
     height: 10vh;
 }
 
-@media (max-width: 648px) {
+@media only screen and (max-width: 600px) {
 
     .hero .menu-principal {
         height: 10vh;
