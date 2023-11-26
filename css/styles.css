@@ -36,7 +36,6 @@
     width: auto;
 }
 
-
 .hero .contenedor .pagina-principal {
     padding: 5vw 0 0 0;
     display: grid;
@@ -54,10 +53,6 @@
     overflow: hidden;
 }
 
-.pagina-principal .ola svg {
-    width: 100%;
-    height: auto;
-}
 
 .pagina-principal img {
     height: 20vh;
@@ -155,11 +150,18 @@
 }
 
 /*Seccion Tutorial*/
-.hero .contenedor .tutorial {
+
+.hero .contenedor .tutorial{
+    display: grid;
+    grid-template-areas: 
+    "contenido"
+    "ola";
+}
+
+.hero .contenedor .tutorial .contenido {
     display: grid;
     grid-template-areas:
-        "titulo tutorial"
-        "ola ola";
+        "titulo tutorial";
     padding: 0 5vw;
     align-items: center;
     height: 67vh;
@@ -168,16 +170,10 @@
 
 }
 
-.hero .contenedor .tutorial .ola2 {
+.hero .contenedor .ola2 {
     grid-area: ola;
-    height: 40vh;
-    width: 100vw;
 }
 
-.hero .contenedor .tutorial .ola2 svg {
-    width: 100%;
-    height: auto;
-}
 
 .hero .contenedor .tutorial .cuadros {
     grid-area: tutorial;
