@@ -298,12 +298,11 @@
 .hero .contenedor .formulario .container-formulario {
     display: grid;
     grid-template-areas:
-        "imagen1 titulo imagen3"
-        "imagen2 contenido imagen4";
-    grid-template-columns: 1fr 1fr 1fr;
+        "titulo"
+        "contenido";
+    grid-template-columns: 1fr;
     column-gap: 2vw;
     background-color: rgb(255, 255, 255);
-    width: 90vw;
     padding: 5vw 0;
 }
 
@@ -321,12 +320,13 @@
     justify-content: center;
     align-items: center;
     height: 83vh;
-    overflow: auto;
-    width: 40vw;
+   
 }
 
 .formulario-contenido {
     grid-area: formulario;
+    display: flex;
+    flex-direction: column;
 }
 
 .botones-formulario {
@@ -525,14 +525,46 @@
         height: 5vh;
         font-size: 2.2vh;
     }
-
-
-
-
-
-
-
-
+    .contenido-formulario{
+        justify-content: center;
+        height: auto;
+        padding: 5vw 0;
+    }
+    .titulo-formulario h2{
+        font-size: 7vw;
+        text-align: center;
+    }
+    .titulo-formulario p{
+        font-size: 5vw;
+        text-align: center;
+    }
+    .contenido-formulario label{
+        text-align: left;
+        font-size: 5vw;
+    }
+    .contenido-formulario input{
+        width: 80vw;
+        font-size: 5vw;
+    }
+    .contenido-formulario input:focus{
+        outline: none;
+    }
+    .contenido-formulario select{
+        width: 90vw;
+        font-size: 5vw;
+    }
+    .botones-formulario button{
+        width: 55vw;
+        height: 5vh;
+        font-size: 2.2vh;
+    }
+    .hero footer .contenedor .redes i {
+        padding: 3vw ;
+        font-size: 7vw;
+    }
+    #texto_fecha {
+        font-size: 5vw;
+    }
 
 
 
