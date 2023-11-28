@@ -385,7 +385,7 @@
 .botones-formulario button:hover {
     background-color: #8781fc;
 }
-
+/*FOOTER*/
 .hero footer .contenedor {
     display: flex;
     flex-direction: column;
@@ -397,14 +397,65 @@
 }
 
 .hero footer .contenedor .redes {
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "redes";
+    
+}
+.hero footer .contenedor .redes .titulo-redes{
+    grid-area: titulo;
+}
+.hero footer .contenedor .redes .titulo-redes p{
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: center;
+    padding: 2vw 0;
+}
+.hero footer .contenedor .redes-sociales{
+    grid-area: redes;
     display: flex;
-    column-gap: 1vw;
+    justify-content: space-between;
+    
 }
 
-.hero footer .contenedor .redes i {
+.hero footer .contenedor .redes-sociales a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 40px; 
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero footer .contenedor .redes-sociales .fa-instagram {
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+}
+
+.hero footer .contenedor .redes-sociales .fa-facebook {
+    background: #3b5998;
+}
+
+.hero footer .contenedor .redes-sociales .fa-twitter {
+    background: #1DA1F2;
+}
+
+.hero footer .contenedor .redes-sociales .fa-tiktok {
+    background: #69C9D0;
+}
+
+.hero footer .contenedor .redes-sociales i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    font-size: 1.5vw;
-    color: gray;
+    font-size: 2vw;
+    border-radius: 50%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .hero footer .contenedor .logo .imagen {
