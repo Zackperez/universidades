@@ -234,9 +234,11 @@
     width: 50vw;
     
 }
+.hero .contenedor .informacion .contenido .lado-derecho .boton-registro{
+    padding: 3vw 0;
+}
 .hero .contenedor .informacion .contenido .lado-derecho .concepto p{
-    line-height: 2em;
-    
+    line-height: 2.3em;
 }
 
 /*Seccion Aliados*/
