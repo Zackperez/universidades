@@ -1,7 +1,6 @@
 @import url(./global/global.css);
 
 #texto_fecha {
-    color: white;
     font-weight: bold;
 }
 
@@ -198,6 +197,47 @@
     font-size: 1.5vw;
 
 }
+/*Seccion información*/
+.hero .contenedor .informacion .contenido{
+    display: grid;
+    grid-template-areas:
+    "izquierda derecha";
+    justify-content: space-around;
+    align-items: center;
+    padding: 0vw 5vw;
+    
+}
+.hero .contenedor .informacion .contenido .lado-izquierdo{
+    grid-area: izquierda;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.hero .contenedor .informacion .contenido .lado-izquierdo .imagen-izquierda{
+    display: flex;
+    padding: 0vw 5vw;
+}
+
+.hero .contenedor .informacion .contenido .lado-derecho{
+    grid-area: derecha;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2vw;
+}
+.hero .contenedor .informacion .contenido .lado-derecho .titulo{
+    text-align: center;
+    font-size: 4vh;
+}
+.hero .contenedor .informacion .contenido .lado-derecho .concepto{
+    width: 50vw;
+    
+}
+.hero .contenedor .informacion .contenido .lado-derecho .concepto p{
+    line-height: 2em;
+    
+}
 
 /*Seccion Aliados*/
 .hero .contenedor .aliados .contenido {
@@ -390,7 +430,7 @@
     display: flex;
     flex-direction: column;
     padding: 2vw;
-    background-color: #191919;
+    background-color: #f8f5f5;
     align-items: center;
     row-gap: 2vh;
     justify-content: center;
@@ -407,7 +447,6 @@
     grid-area: titulo;
 }
 .hero footer .contenedor .redes .titulo-redes p{
-    color: white;
     font-size: 1.5vw;
     font-weight: bold;
     text-align: center;
@@ -477,7 +516,7 @@
     }
 
     .hero .menu-principal .enlaces a {
-        font-size: 2.2vh;
+        font-size: 2vh;
     }
 
     .hero .contenedor .pagina-principal {
@@ -544,7 +583,36 @@
         font-size: 2.3vh;
         color: #ffffff;
     }
-
+    /*Seccion información*/
+    .hero .contenedor .informacion .contenido{
+    display: grid;
+    grid-template-areas:
+    "izquierda" 
+    "derecha";
+    justify-content: center;
+    align-items: center;
+ 
+    
+    }
+    .hero .contenedor .informacion .contenido .lado-izquierdo{
+        grid-area: izquierda;
+    }
+    .hero .contenedor .informacion .contenido .lado-derecho{
+        grid-area: derecha;
+    }
+    .hero .contenedor .informacion .contenido .lado-derecho .titulo h2{
+        text-align: center;
+        font-size: 5vh;
+    }
+    .hero .contenedor .informacion .contenido .lado-derecho .concepto{
+        width: 80vw;
+        
+    }
+    .hero .contenedor .informacion .contenido .lado-derecho .boton-registro button{
+        padding: 2vh 8vw;
+        font-size: 2.4vh;
+    }
+    /*Seccion Aliados*/
     .hero .contenedor .aliados .contenido .titulo h1 {
         font-size: 5vh;
     }
@@ -609,14 +677,25 @@
         height: 5vh;
         font-size: 2.2vh;
     }
+    .hero footer .contenedor .redes-sociales{
+        display: flex;
+        justify-content: space-around;
+    }
+    .hero footer .contenedor .redes .titulo-redes p{
+        font-size: 6vw;
+        padding: 5vw 0;
+    }
     .hero footer .contenedor .redes i {
-        padding: 3vw ;
+        padding: 1vw;
         font-size: 7vw;
     }
     #texto_fecha {
         font-size: 5vw;
     }
-
+    .btn {
+     
+        width: 30vw;
+    }
 
 
 
