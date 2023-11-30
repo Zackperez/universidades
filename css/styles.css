@@ -26,7 +26,7 @@
 
 .hero nav {
     position: fixed;
-    width: 80vw;
+    width: 90vw;
     border-radius: 0.5vw;
     background-color: #ffffff;
 }
@@ -158,7 +158,79 @@
     height: 50vh;
     width: auto;
 }
+/*Sección programas*/
+.hero .contenedor .programas{
+    display: flex;
+    flex-direction: column;
+}
+.hero .contenedor .programas .titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vh;
+    text-align: center;
+    padding: 2vw 0;
+}
 
+.hero .contenedor .programas .contenido-programas{
+    display: flex;
+    padding: 5vw;
+    column-gap: 2vw;
+}
+.hero .contenedor .programas .contenido-programas .programa{
+    display: grid;
+    grid-template-areas:
+    "imagen"
+    "contenido"
+    "link" ;
+    padding: 2vw 0;
+    box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+
+}
+.hero .contenedor .programas .contenido-programas .programa .imagen{
+    grid-area: imagen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .contenedor .programas .contenido-programas .programa .imagen img{
+    height: 22vh;
+}
+.hero .contenedor .programas .contenido-programas .programa .contenido{
+    grid-area: contenido;
+    display: grid;
+    grid-template-areas:
+    "titulo"
+    "descripcion";
+    padding: 0 2vw ;
+
+}
+.hero .contenedor .programas .contenido-programas .programa .contenido .titulo-programa{
+    grid-area:  titulo;
+    padding: 2vw 0;
+    text-align: center;
+
+}
+.hero .contenedor .programas .contenido-programas .programa .contenido .titulo-program h2{
+    text-align: center;
+}    
+.hero .contenedor .programas .contenido-programas .programa .contenido .descripcion{
+    grid-area: descripcion;
+    
+}
+.hero .contenedor .programas .contenido-programas .programa .contenido .descripcion p{
+    line-height: 2em;
+}
+.hero .contenedor .programas .contenido-programas .programa .formulario{
+    grid-area: link;
+    display: flex;
+    padding: 2vw 0;
+}
+.hero .contenedor .programas .contenido-programas .programa .formulario a{
+    text-align: left;
+    letter-spacing: 0.15em;
+    font-size: 3vh;
+}
 /*Seccion Tutorial*/
 
 .hero .contenedor .tutorial {
@@ -232,6 +304,10 @@
     justify-content: center;
     padding: 2vw 5vw;
     row-gap: 5vh;
+}
+
+.hero .contenedor .informacion .contenido .titulo{
+    text-align: center;
 }
 
 .hero .contenedor .informacion .contenido .titulo h2 {
@@ -608,6 +684,40 @@ footer .contenedor .logo .imagen img {
         padding: 5vh 0;
     }
 
+    .hero .contenedor .programas .contenido-programas {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 5vh;
+    }
+
+    .hero .contenedor .programas .contenido-programas .programa{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero .contenedor .programas .contenido-programas .programa .imagen img{
+        height: 10vh;
+    }
+
+    .hero .contenedor .programas .contenido-programas .programa .contenido .titulo-programa{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .hero .contenedor .programas .contenido-programas .programa .contenido .titulo-programa h2{
+        font-size: 5vh;
+    }
+
+    .hero .contenedor .programas .contenido-programas .programa .contenido .descripcion{
+        text-align: center;
+    }
+
+    .hero .contenedor .programas .contenido-programas .programa .contenido .descripcion p{
+        font-size: 2.2vh;
+    }
+    
     .tutorial .contenido .titulo {
         text-align: center;
     }
@@ -624,8 +734,8 @@ footer .contenedor .logo .imagen img {
     .hero .contenedor .tutorial .cuadros .cuadro {
         height: auto;
         padding: 5vw;
-        width: 60vw;
-        min-height: 30vh;
+        width: 75vw;
+        min-height: 45vh;
     }
 
     .hero .contenedor .tutorial .cuadros .cuadro .cabecera h3 {
@@ -644,43 +754,40 @@ footer .contenedor .logo .imagen img {
     }
 
     /*Seccion información*/
-    .hero .contenedor .informacion .contenido {
+    .hero .contenedor .informacion .contenido .contenedor .concepto {
         display: grid;
-        grid-template-areas:
-            "izquierda"
-            "derecha";
-        justify-content: center;
-        align-items: center;
-
-
+        grid-template-areas: 
+        "imagen"
+        "texto";
+        grid-template-columns: 1fr;
+        row-gap: 2vh;
     }
 
-    .hero .contenedor .informacion .contenido .lado-izquierdo {
-        grid-area: izquierda;
+    .hero .contenedor .informacion .contenido .contenedor .concepto .imagen{
+        grid-area: imagen;
     }
 
-    .hero .contenedor .informacion .contenido .lado-derecho {
-        grid-area: derecha;
+    .hero .contenedor .informacion .contenido .contenedor .concepto .imagen img{
+        height: 20vh;
     }
 
-    .hero .contenedor .informacion .contenido .lado-derecho .titulo h2 {
-        text-align: center;
-        font-size: 5vh;
+    .hero .contenedor .informacion .contenido .contenedor .concepto .texto{
+        grid-area: texto;
     }
 
-    .hero .contenedor .informacion .contenido .lado-derecho .concepto {
-        width: 80vw;
-
-    }
-
-    .hero .contenedor .informacion .contenido .lado-derecho .boton-registro button {
-        padding: 2vh 8vw;
-        font-size: 2.4vh;
+    .hero .contenedor .informacion .contenido .contenedor .concepto .texto p {
+        font-size: 3vh;
     }
 
     /*Seccion Aliados*/
+    .hero .contenedor .aliados .contenido .titulo{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+    }
+
     .hero .contenedor .aliados .contenido .titulo h1 {
-        font-size: 5vh;
+        font-size: 3vh;
     }
 
     .aliados .contenido .universidades .contenedor-universidades {
@@ -752,17 +859,17 @@ footer .contenedor .logo .imagen img {
         font-size: 2.2vh;
     }
 
-    .hero footer .contenedor .redes-sociales {
+    footer .contenedor .redes-sociales {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
-    .hero footer .contenedor .redes .titulo-redes p {
+    footer .contenedor .redes .titulo-redes p{
         font-size: 6vw;
         padding: 5vw 0;
     }
 
-    .hero footer .contenedor .redes i {
+    footer .contenedor .redes i {
         padding: 1vw;
         font-size: 7vw;
     }
