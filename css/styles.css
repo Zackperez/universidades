@@ -817,6 +817,10 @@ footer .contenedor .logo .imagen img {
         height: 5vh;
         font-size: 2.2vh;
     }
+    .hero .contenedor .aliados .contenido .titulo .secundario {
+        width: 85vw;
+        text-align: left;
+    }
 
     .contenido-formulario {
         justify-content: center;
