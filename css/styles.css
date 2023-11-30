@@ -4,6 +4,11 @@
     font-weight: bold;
 }
 
+.hero {
+    display: flex;
+    justify-content: center;
+}
+
 .btn {
     margin: 20px;
     width: 12vw;
@@ -21,8 +26,9 @@
 
 .hero nav {
     position: fixed;
-    width: 90vw;
-    background-color: #191919;
+    width: 80vw;
+    border-radius: 0.5vw;
+    background-color: #ffffff;
 }
 
 .hero nav .logo-equiti {
@@ -36,7 +42,7 @@
 }
 
 .hero .contenedor .pagina-principal {
-    padding: 5vw 0 0 0;
+    padding: 3vw 0 0 0;
     display: grid;
     grid-template-areas:
         "textos imagen"
@@ -65,6 +71,11 @@
     justify-content: space-between;
 }
 
+.hero .menu-principal .logo-equiti {
+    display: flex;
+    align-items: center;
+}
+
 .hero .menu-principal .logo-equiti img {
     height: 10vh;
 }
@@ -75,8 +86,8 @@
 }
 
 .hero .menu-principal .enlaces a {
-    color: #ffffff;
-    font-size: 1.5vw;
+    color: #191919;
+    font-size: 1.8vw;
 }
 
 .hero .menu-principal .enlaces a:hover {
@@ -160,13 +171,18 @@
 .hero .contenedor .tutorial .contenido {
     display: grid;
     grid-template-areas:
-        "titulo tutorial";
-    padding: 0 5vw;
+        "titulo"
+        "tutorial";
+    padding: 5vw;
     align-items: center;
-    height: 67vh;
+    height: 50vh;
     justify-content: center;
-    background-color: #6C63FF;
+    justify-items: center;
+    row-gap: 5vh;
+}
 
+.hero .contenedor .tutorial .contenido .titulo {
+    font-size: 4vh;
 }
 
 .hero .contenedor .ola2 {
@@ -184,8 +200,8 @@
     display: flex;
     flex-direction: column;
     padding: 1vw;
-    width: 20vw;
-    height: 25vh;
+    width: 25vw;
+    height: 30vh;
     background-color: #f2f2f2;
     border-radius: 0.5vw;
     justify-content: space-evenly;
@@ -195,62 +211,85 @@
 
 .hero .contenedor .tutorial .cuadros .cuadro .cabecera {
     font-size: 1.5vw;
-
 }
+
+.hero .contenedor .tutorial .cuadros .cuadro .footer a {
+    background-color: #6C63FF;
+    padding: 1.5vh 2vw;
+    font-size: 2.3vh;
+    color: #ffffff;
+    border-radius: 0.5vw;
+}
+
 /*Seccion información*/
-.hero .contenedor .informacion .contenido{
-    display: grid;
-    grid-template-areas:
-    "izquierda derecha";
-    justify-content: space-around;
-    align-items: center;
-    padding: 0vw 5vw;
-    
-}
-.hero .contenedor .informacion .contenido .lado-izquierdo{
-    grid-area: izquierda;
+.hero .contenedor .informacion .contenido {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;  
-}
-.hero .contenedor .informacion .contenido .lado-izquierdo .imagen-izquierda{
-    display: flex;
-    padding: 0vw 5vw;
+    padding: 2vw 5vw;
+    row-gap: 5vh;
 }
 
-.hero .contenedor .informacion .contenido .lado-derecho{
-    grid-area: derecha;
+.hero .contenedor .informacion .contenido .titulo h2 {
+    font-size: 5vh;
+}
+
+.hero .contenedor .informacion .contenedor {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
+    row-gap: 15vh;
+}
+
+.hero .contenedor .informacion .contenido .contenedor .concepto{
+    display: grid;
+    width: 85vw;
     align-items: center;
-    row-gap: 2vw;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
 }
-.hero .contenedor .informacion .contenido .lado-derecho .titulo{
-    text-align: center;
-    font-size: 4vh;
+
+.hero .contenedor .informacion .contenido .contenedor .concepto .imagen{
+    display: flex;
+    justify-content: center;
 }
-.hero .contenedor .informacion .contenido .lado-derecho .concepto{
-    width: 50vw;
-    
+
+.hero .contenedor .informacion .contenido .contenedor .concepto .texto{
+    font-size: 1.5vw;
 }
-.hero .contenedor .informacion .contenido .lado-derecho .boton-registro{
-    padding: 3vw 0;
+
+.hero .contenedor .informacion .contenido .contenedor .concepto .imagen img{
+    height: 30vh;
 }
-.hero .contenedor .informacion .contenido .lado-derecho .concepto p{
-    line-height: 2.3em;
-}
+
+
 
 /*Seccion Aliados*/
 .hero .contenedor .aliados .contenido {
     display: grid;
     text-align: center;
+    justify-content: center;
+    justify-items: center;
 }
 
 .hero .contenedor .aliados .contenido .titulo h1 {
     color: black;
     font-weight: bold;
     font-size: 3vw;
+}
+
+.hero .contenedor .aliados .contenido .titulo .principal h1{
+    font-size: 5vh;
+}
+
+.hero .contenedor .aliados .contenido .titulo .secundario{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+}
+
+.hero .contenedor .aliados .contenido .titulo .secundario p{
+    font-size: 3vh;
 }
 
 .aliados .contenido .universidades {
@@ -281,7 +320,6 @@
 }
 
 .aliados .contenido .universidades .contenedor-universidades .caja {
-    background-color: #191919;
     border-radius: 1vw;
     width: 40vw;
     display: grid;
@@ -290,7 +328,6 @@
         "imagen boton";
     height: 40vh;
     color: #ffffff;
-    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
     justify-items: center;
     align-items: center;
     justify-content: space-evenly;
@@ -305,6 +342,7 @@
 }
 
 .aliados .contenido .universidades .contenedor-universidades .caja .titulo {
+    color: black;
     grid-area: descuento;
     font-size: 5vw;
     border-radius: 50%;
@@ -315,7 +353,7 @@
 .aliados .contenido .universidades .contenedor-universidades .caja .boton button {
     background-color: #6C63FF;
     color: #ffffff;
-    width: 15vw;
+    width: 10vw;
 }
 
 .aliados .contenido .universidades .contenedor-universidades .caja .imagen img {
@@ -326,6 +364,8 @@
 .contenido-derecha-texto p {
     text-align: center;
 }
+
+/* FORMULARIO */
 
 .formulario {
     display: grid;
@@ -362,7 +402,7 @@
     justify-content: center;
     align-items: center;
     height: 83vh;
-   
+
 }
 
 .formulario-contenido {
@@ -427,8 +467,10 @@
 .botones-formulario button:hover {
     background-color: #8781fc;
 }
+
 /*FOOTER*/
-.hero footer .contenedor {
+
+footer .contenedor {
     display: flex;
     flex-direction: column;
     padding: 2vw;
@@ -438,56 +480,59 @@
     justify-content: center;
 }
 
-.hero footer .contenedor .redes {
+footer .contenedor .redes {
     display: grid;
-    grid-template-areas: 
-    "titulo"
-    "redes";
-    
+    grid-template-areas:
+        "titulo"
+        "redes";
+
 }
-.hero footer .contenedor .redes .titulo-redes{
+
+footer .contenedor .redes .titulo-redes {
     grid-area: titulo;
 }
-.hero footer .contenedor .redes .titulo-redes p{
+
+footer .contenedor .redes .titulo-redes p {
     font-size: 1.5vw;
     font-weight: bold;
     text-align: center;
     padding: 2vw 0;
 }
-.hero footer .contenedor .redes-sociales{
+
+footer .contenedor .redes-sociales {
     grid-area: redes;
     display: flex;
     justify-content: space-between;
-    
+
 }
 
-.hero footer .contenedor .redes-sociales a {
+footer .contenedor .redes-sociales a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px; 
-    height: 40px; 
+    width: 40px;
+    height: 40px;
     text-decoration: none;
     color: #fff;
 }
 
-.hero footer .contenedor .redes-sociales .fa-instagram {
+footer .contenedor .redes-sociales .fa-instagram {
     background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
 }
 
-.hero footer .contenedor .redes-sociales .fa-facebook {
+footer .contenedor .redes-sociales .fa-facebook {
     background: #3b5998;
 }
 
-.hero footer .contenedor .redes-sociales .fa-twitter {
+footer .contenedor .redes-sociales .fa-twitter {
     background: #1DA1F2;
 }
 
-.hero footer .contenedor .redes-sociales .fa-tiktok {
+footer .contenedor .redes-sociales .fa-tiktok {
     background: #69C9D0;
 }
 
-.hero footer .contenedor .redes-sociales i {
+footer .contenedor .redes-sociales i {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -499,11 +544,11 @@
     height: 100%;
 }
 
-.hero footer .contenedor .logo .imagen {
+footer .contenedor .logo .imagen {
     display: flex;
 }
 
-.hero footer .contenedor .logo .imagen img {
+footer .contenedor .logo .imagen img {
     height: 10vh;
 }
 
@@ -585,35 +630,42 @@
         font-size: 2.3vh;
         color: #ffffff;
     }
+
     /*Seccion información*/
-    .hero .contenedor .informacion .contenido{
-    display: grid;
-    grid-template-areas:
-    "izquierda" 
-    "derecha";
-    justify-content: center;
-    align-items: center;
- 
-    
+    .hero .contenedor .informacion .contenido {
+        display: grid;
+        grid-template-areas:
+            "izquierda"
+            "derecha";
+        justify-content: center;
+        align-items: center;
+
+
     }
-    .hero .contenedor .informacion .contenido .lado-izquierdo{
+
+    .hero .contenedor .informacion .contenido .lado-izquierdo {
         grid-area: izquierda;
     }
-    .hero .contenedor .informacion .contenido .lado-derecho{
+
+    .hero .contenedor .informacion .contenido .lado-derecho {
         grid-area: derecha;
     }
-    .hero .contenedor .informacion .contenido .lado-derecho .titulo h2{
+
+    .hero .contenedor .informacion .contenido .lado-derecho .titulo h2 {
         text-align: center;
         font-size: 5vh;
     }
-    .hero .contenedor .informacion .contenido .lado-derecho .concepto{
+
+    .hero .contenedor .informacion .contenido .lado-derecho .concepto {
         width: 80vw;
-        
+
     }
-    .hero .contenedor .informacion .contenido .lado-derecho .boton-registro button{
+
+    .hero .contenedor .informacion .contenido .lado-derecho .boton-registro button {
         padding: 2vh 8vw;
         font-size: 2.4vh;
     }
+
     /*Seccion Aliados*/
     .hero .contenedor .aliados .contenido .titulo h1 {
         font-size: 5vh;
@@ -626,14 +678,14 @@
     .aliados .contenido .universidades .contenedor-universidades .caja {
         width: 70vw;
         height: 60vh;
-        grid-template-areas: 
-        "descuento"
-        "imagen"
-        "boton";
+        grid-template-areas:
+            "descuento"
+            "imagen"
+            "boton";
         padding: 5vw;
     }
 
-    .aliados .contenido .universidades .contenedor-universidades .caja .titulo p{
+    .aliados .contenido .universidades .contenedor-universidades .caja .titulo p {
         font-size: 5vh;
     }
 
@@ -646,56 +698,69 @@
         height: 5vh;
         font-size: 2.2vh;
     }
-    .contenido-formulario{
+
+    .contenido-formulario {
         justify-content: center;
         height: auto;
         padding: 5vw 0;
     }
-    .titulo-formulario h2{
+
+    .titulo-formulario h2 {
         font-size: 7vw;
         text-align: center;
     }
-    .titulo-formulario p{
+
+    .titulo-formulario p {
         font-size: 5vw;
         text-align: center;
     }
-    .contenido-formulario label{
+
+    .contenido-formulario label {
         text-align: left;
         font-size: 5vw;
     }
-    .contenido-formulario input{
+
+    .contenido-formulario input {
         width: 80vw;
         font-size: 5vw;
     }
-    .contenido-formulario input:focus{
+
+    .contenido-formulario input:focus {
         outline: none;
     }
-    .contenido-formulario select{
+
+    .contenido-formulario select {
         width: 90vw;
         font-size: 5vw;
     }
-    .botones-formulario button{
+
+    .botones-formulario button {
         width: 55vw;
         height: 5vh;
         font-size: 2.2vh;
     }
-    .hero footer .contenedor .redes-sociales{
+
+    .hero footer .contenedor .redes-sociales {
         display: flex;
         justify-content: space-around;
     }
-    .hero footer .contenedor .redes .titulo-redes p{
+
+    .hero footer .contenedor .redes .titulo-redes p {
         font-size: 6vw;
         padding: 5vw 0;
     }
+
     .hero footer .contenedor .redes i {
         padding: 1vw;
         font-size: 7vw;
     }
+
     #texto_fecha {
         font-size: 5vw;
     }
+
     .btn {
-     
+
         width: 30vw;
     }
 
