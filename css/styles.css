@@ -213,6 +213,10 @@
     font-size: 1.5vw;
 }
 
+.hero .contenedor .tutorial .cuadros .cuadro .cabecera .icono{
+    font-size: 6vh;
+}
+
 .hero .contenedor .tutorial .cuadros .cuadro .footer a {
     background-color: #6C63FF;
     padding: 1.5vh 2vw;
@@ -265,6 +269,10 @@
 
 
 /*Seccion Aliados*/
+
+.hero .contenedor .aliados {
+    padding: 5vw;
+}
 .hero .contenedor .aliados .contenido {
     display: grid;
     text-align: center;
@@ -286,6 +294,10 @@
     width: 90vw;
     display: flex;
     justify-content: center;
+}
+
+.hero .contenedor .aliados .contenido .titulo .secundario{
+    width: 70vw;
 }
 
 .hero .contenedor .aliados .contenido .titulo .secundario p{
