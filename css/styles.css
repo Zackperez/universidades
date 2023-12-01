@@ -4,11 +4,6 @@
     font-weight: bold;
 }
 
-.hero {
-    display: flex;
-    justify-content: center;
-}
-
 .btn {
     margin: 20px;
     width: 12vw;
