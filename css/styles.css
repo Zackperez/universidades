@@ -97,6 +97,8 @@
 
 .pagina-principal .lado-der {
     grid-area: imagen;
+    display: grid;
+    align-items: center;
     padding: 0vw 5vw;
     margin-top: 10vh;
 }
@@ -147,10 +149,11 @@
 .pagina-principal .lado-der .img-central {
     display: grid;
     place-items: center;
+    align-items: center;
 }
 
 .pagina-principal .lado-der .img-central img {
-    height: 50vh;
+    height: 20vh;
     width: auto;
 }
 
@@ -306,6 +309,11 @@
 }
 
 /*Seccion información*/
+
+.hero .contenedor .informacion{
+    padding: 5vw;
+}
+
 .hero .contenedor .informacion .contenido {
     display: flex;
     flex-wrap: wrap;
