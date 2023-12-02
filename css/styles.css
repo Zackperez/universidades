@@ -153,12 +153,14 @@
     height: 50vh;
     width: auto;
 }
+
 /*Sección programas*/
-.hero .contenedor .programas{
+.hero .contenedor .programas {
     display: flex;
     flex-direction: column;
 }
-.hero .contenedor .programas .titulo{
+
+.hero .contenedor .programas .titulo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -167,65 +169,76 @@
     padding: 2vw 0;
 }
 
-.hero .contenedor .programas .contenido-programas{
+.hero .contenedor .programas .contenido-programas {
     display: flex;
     padding: 5vw;
     column-gap: 2vw;
 }
-.hero .contenedor .programas .contenido-programas .programa{
+
+.hero .contenedor .programas .contenido-programas .programa {
     display: grid;
     grid-template-areas:
-    "imagen"
-    "contenido"
-    "link" ;
+        "imagen"
+        "contenido"
+        "link";
     padding: 2vw 0;
     box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
 
 }
-.hero .contenedor .programas .contenido-programas .programa .imagen{
+
+.hero .contenedor .programas .contenido-programas .programa .imagen {
     grid-area: imagen;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.hero .contenedor .programas .contenido-programas .programa .imagen img{
+
+.hero .contenedor .programas .contenido-programas .programa .imagen img {
     height: 22vh;
 }
-.hero .contenedor .programas .contenido-programas .programa .contenido{
+
+.hero .contenedor .programas .contenido-programas .programa .contenido {
     grid-area: contenido;
     display: grid;
     grid-template-areas:
-    "titulo"
-    "descripcion";
-    padding: 0 2vw ;
+        "titulo"
+        "descripcion";
+    padding: 0 2vw;
 
 }
-.hero .contenedor .programas .contenido-programas .programa .contenido .titulo-programa{
-    grid-area:  titulo;
+
+.hero .contenedor .programas .contenido-programas .programa .contenido .titulo-programa {
+    grid-area: titulo;
     padding: 2vw 0;
     text-align: center;
 
 }
-.hero .contenedor .programas .contenido-programas .programa .contenido .titulo-program h2{
+
+.hero .contenedor .programas .contenido-programas .programa .contenido .titulo-program h2 {
     text-align: center;
-}    
-.hero .contenedor .programas .contenido-programas .programa .contenido .descripcion{
-    grid-area: descripcion;
-    
 }
-.hero .contenedor .programas .contenido-programas .programa .contenido .descripcion p{
+
+.hero .contenedor .programas .contenido-programas .programa .contenido .descripcion {
+    grid-area: descripcion;
+
+}
+
+.hero .contenedor .programas .contenido-programas .programa .contenido .descripcion p {
     line-height: 2em;
 }
-.hero .contenedor .programas .contenido-programas .programa .formulario{
+
+.hero .contenedor .programas .contenido-programas .programa .formulario {
     grid-area: link;
     display: flex;
     padding: 2vw 0;
 }
-.hero .contenedor .programas .contenido-programas .programa .formulario a{
+
+.hero .contenedor .programas .contenido-programas .programa .formulario a {
     text-align: left;
     letter-spacing: 0.15em;
     font-size: 3vh;
 }
+
 /*Seccion Tutorial*/
 
 .hero .contenedor .tutorial {
@@ -280,7 +293,7 @@
     font-size: 1.5vw;
 }
 
-.hero .contenedor .tutorial .cuadros .cuadro .cabecera .icono{
+.hero .contenedor .tutorial .cuadros .cuadro .cabecera .icono {
     font-size: 6vh;
 }
 
@@ -301,7 +314,7 @@
     row-gap: 5vh;
 }
 
-.hero .contenedor .informacion .contenido .titulo{
+.hero .contenedor .informacion .contenido .titulo {
     text-align: center;
 }
 
@@ -316,7 +329,7 @@
     row-gap: 15vh;
 }
 
-.hero .contenedor .informacion .contenido .contenedor .concepto{
+.hero .contenedor .informacion .contenido .contenedor .concepto {
     display: grid;
     width: 85vw;
     align-items: center;
@@ -324,16 +337,16 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.hero .contenedor .informacion .contenido .contenedor .concepto .imagen{
+.hero .contenedor .informacion .contenido .contenedor .concepto .imagen {
     display: flex;
     justify-content: center;
 }
 
-.hero .contenedor .informacion .contenido .contenedor .concepto .texto{
+.hero .contenedor .informacion .contenido .contenedor .concepto .texto {
     font-size: 1.5vw;
 }
 
-.hero .contenedor .informacion .contenido .contenedor .concepto .imagen img{
+.hero .contenedor .informacion .contenido .contenedor .concepto .imagen img {
     height: 30vh;
 }
 
@@ -344,6 +357,7 @@
 .hero .contenedor .aliados {
     padding: 5vw;
 }
+
 .hero .contenedor .aliados .contenido {
     display: grid;
     text-align: center;
@@ -357,21 +371,21 @@
     font-size: 3vw;
 }
 
-.hero .contenedor .aliados .contenido .titulo .principal h1{
+.hero .contenedor .aliados .contenido .titulo .principal h1 {
     font-size: 5vh;
 }
 
-.hero .contenedor .aliados .contenido .titulo .secundario{
+.hero .contenedor .aliados .contenido .titulo .secundario {
     width: 90vw;
     display: flex;
     justify-content: center;
 }
 
-.hero .contenedor .aliados .contenido .titulo .secundario{
+.hero .contenedor .aliados .contenido .titulo .secundario {
     width: 70vw;
 }
 
-.hero .contenedor .aliados .contenido .titulo .secundario p{
+.hero .contenedor .aliados .contenido .titulo .secundario p {
     font-size: 3vh;
 }
 
@@ -635,7 +649,73 @@ footer .contenedor .logo .imagen img {
     height: 10vh;
 }
 
+.hero .contenedor .programas-responsive {
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
+
+    .hero .contenedor .programas {
+        display: none;
+    }
+
+    .hero .contenedor .programas-responsive {
+        display: block;
+    }
+
+    .hero .contenedor .programas-responsive .contenido-programas {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 5vh;
+    }
+
+    .hero .contenedor .programas-responsive .titulo{
+        padding: 5vw;
+    }
+
+    .hero .contenedor .programas-responsive .titulo h2{ 
+        font-size: 6vh;
+        text-align: center;
+    }
+
+    .hero .contenedor .programas-responsive .contenido-programas .programa {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 3vh;
+    }
+
+    .hero .contenedor .programas-responsive .contenido-programas .programa .imagen img {
+        height: 25vh;
+    }
+
+    .hero .contenedor .programas-responsive .contenido-programas .programa .contenido .titulo-programa {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero .contenedor .programas-responsive .contenido-programas .programa .contenido .titulo-programa h2 {
+        font-size: 4vh;
+    }
+
+    .hero .contenedor .programas-responsive .contenido-programas .programa .contenido .descripcion {
+        text-align: center;
+    }
+
+    .hero .contenedor .programas-responsive .contenido-programas .programa .contenido .descripcion p {
+        font-size: 2.2vh;
+    }
+
+    .hero .contenedor .programas-responsive .contenido-programas .programa .formulario a {
+        padding: 2vw 5vw;
+        background-color: #6C63FF;
+        color: #ffffff;
+        font-size: 2.5vh;
+     }
+
+
+    
 
     .hero .menu-principal {
         height: 10vh;
@@ -686,33 +766,36 @@ footer .contenedor .logo .imagen img {
         row-gap: 5vh;
     }
 
-    .hero .contenedor .programas .contenido-programas .programa{
+    .hero .contenedor .programas .contenido-programas .programa {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .hero .contenedor .programas .contenido-programas .programa .imagen img{
+    .hero .contenedor .programas .contenido-programas .programa .imagen img {
         height: 10vh;
     }
 
-    .hero .contenedor .programas .contenido-programas .programa .contenido .titulo-programa{
+    .hero .contenedor .programas .contenido-programas .programa .contenido .titulo-programa {
         display: flex;
         justify-content: center;
     }
-    
-    .hero .contenedor .programas .contenido-programas .programa .contenido .titulo-programa h2{
+
+    .hero .contenedor .programas .contenido-programas .programa .contenido .titulo-programa h2 {
         font-size: 5vh;
     }
 
-    .hero .contenedor .programas .contenido-programas .programa .contenido .descripcion{
+    .hero .contenedor .programas .contenido-programas .programa .contenido .descripcion {
         text-align: center;
     }
 
-    .hero .contenedor .programas .contenido-programas .programa .contenido .descripcion p{
+    .hero .contenedor .programas .contenido-programas .programa .contenido .descripcion p {
         font-size: 2.2vh;
     }
-    
+
+    /* PROGRAMA RESPONSIVE */
+
+
     .tutorial .contenido .titulo {
         text-align: center;
     }
@@ -751,22 +834,22 @@ footer .contenedor .logo .imagen img {
     /*Seccion información*/
     .hero .contenedor .informacion .contenido .contenedor .concepto {
         display: grid;
-        grid-template-areas: 
-        "imagen"
-        "texto";
+        grid-template-areas:
+            "imagen"
+            "texto";
         grid-template-columns: 1fr;
         row-gap: 2vh;
     }
 
-    .hero .contenedor .informacion .contenido .contenedor .concepto .imagen{
+    .hero .contenedor .informacion .contenido .contenedor .concepto .imagen {
         grid-area: imagen;
     }
 
-    .hero .contenedor .informacion .contenido .contenedor .concepto .imagen img{
+    .hero .contenedor .informacion .contenido .contenedor .concepto .imagen img {
         height: 20vh;
     }
 
-    .hero .contenedor .informacion .contenido .contenedor .concepto .texto{
+    .hero .contenedor .informacion .contenido .contenedor .concepto .texto {
         grid-area: texto;
     }
 
@@ -775,10 +858,10 @@ footer .contenedor .logo .imagen img {
     }
 
     /*Seccion Aliados*/
-    .hero .contenedor .aliados .contenido .titulo{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+    .hero .contenedor .aliados .contenido .titulo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .hero .contenedor .aliados .contenido .titulo h1 {
@@ -812,6 +895,7 @@ footer .contenedor .logo .imagen img {
         height: 5vh;
         font-size: 2.2vh;
     }
+
     .hero .contenedor .aliados .contenido .titulo .secundario {
         width: 85vw;
         text-align: left;
@@ -863,7 +947,7 @@ footer .contenedor .logo .imagen img {
         justify-content: space-evenly;
     }
 
-    footer .contenedor .redes .titulo-redes p{
+    footer .contenedor .redes .titulo-redes p {
         font-size: 6vw;
         padding: 5vw 0;
     }
