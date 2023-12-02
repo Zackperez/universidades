@@ -655,6 +655,10 @@ footer .contenedor .logo .imagen img {
 
 @media only screen and (max-width: 600px) {
 
+    .pagina-principal .lado-izq .texto {
+        row-gap: 6vw;
+    }
+
     .hero .contenedor .programas {
         display: none;
     }
@@ -701,6 +705,7 @@ footer .contenedor .logo .imagen img {
 
     .hero .contenedor .programas-responsive .contenido-programas .programa .contenido .descripcion {
         text-align: center;
+        padding: 0 5vw;
     }
 
     .hero .contenedor .programas-responsive .contenido-programas .programa .contenido .descripcion p {
@@ -854,7 +859,11 @@ footer .contenedor .logo .imagen img {
     }
 
     .hero .contenedor .informacion .contenido .contenedor .concepto .texto p {
-        font-size: 3vh;
+        font-size: 2.5vh;
+    }
+
+    .hero .contenedor .aliados .contenido .titulo .secundario p {
+        font-size: 2.5vh;
     }
 
     /*Seccion Aliados*/
