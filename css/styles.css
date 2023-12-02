@@ -287,7 +287,7 @@
     height: 30vh;
     background-color: #f2f2f2;
     border-radius: 0.5vw;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
 }
@@ -327,7 +327,7 @@
 }
 
 .hero .contenedor .informacion .contenido .titulo h2 {
-    font-size: 5vh;
+    font-size: 6vh;
 }
 
 .hero .contenedor .informacion .contenedor {
@@ -376,11 +376,10 @@
 .hero .contenedor .aliados .contenido .titulo h1 {
     color: black;
     font-weight: bold;
-    font-size: 3vw;
 }
 
 .hero .contenedor .aliados .contenido .titulo .principal h1 {
-    font-size: 5vh;
+    font-size: 6vh;
 }
 
 .hero .contenedor .aliados .contenido .titulo .secundario {
@@ -680,6 +679,7 @@ footer .contenedor .logo .imagen img {
         flex-direction: column;
         flex-wrap: wrap;
         row-gap: 5vh;
+        padding: 5vw;
     }
 
     .hero .contenedor .programas-responsive .titulo{
@@ -696,6 +696,8 @@ footer .contenedor .logo .imagen img {
         flex-wrap: wrap;
         justify-content: center;
         row-gap: 3vh;
+        padding: 5vw 0;
+        box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
     }
 
     .hero .contenedor .programas-responsive .contenido-programas .programa .imagen img {
@@ -749,8 +751,9 @@ footer .contenedor .logo .imagen img {
             "ola";
     }
 
+
     .pagina-principal .lado-der .img-central img {
-        height: 30vh;
+        height: 10vh;
     }
 
     .pagina-principal .lado-izq .texto .boton button {
@@ -824,6 +827,7 @@ footer .contenedor .logo .imagen img {
 
     .hero .contenedor .tutorial .cuadros .cuadro {
         height: auto;
+        border-radius: 2.5vw;
         padding: 5vw;
         width: 75vw;
         min-height: 45vh;
