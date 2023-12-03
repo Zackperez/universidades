@@ -29,18 +29,15 @@
 }
 
 .hero header .navb-items {
-
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    letter-spacing: 3px;
 }
 
 .hero header .item {
     text-align: center;
     margin-inline: 5%;
     font-size: 17px;
-    padding: 2px 0;
     transition: all .1s ease;
     cursor: pointer;
 }
@@ -86,7 +83,7 @@
 }
 /*Sección principal*/
 .hero .contenedor .pagina-principal {
-    /* padding: 3vw 0 0 0; */
+    padding: 1vw 0 0 0;
     display: grid;
     grid-template-areas:
         "textos imagen"
@@ -110,7 +107,7 @@
 .pagina-principal .lado-izq {
     grid-area: textos;
     padding: 0vw 5vw;
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
 }
 
 .pagina-principal .lado-der {
@@ -118,7 +115,7 @@
     display: grid;
     align-items: center;
     padding: 0vw 5vw;
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
 }
 
 .pagina-principal .lado-izq .cap {
