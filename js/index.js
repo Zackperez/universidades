@@ -37,21 +37,25 @@ const Controlador = {
     },
 
     transitionSmooth: function () {
+        var modalLinks = document.querySelectorAll('[data-bs-dismiss="modal"]');
 
-        const smoothScrollLinks = document.getElementsByClassName('smooth-scroll');
-        // Itera sobre los enlaces
-        for (let i = 0; i < smoothScrollLinks.length; i++) {
-            // Agrega un evento de clic a cada enlace
-            smoothScrollLinks[i].addEventListener('click', function (event) {
-                event.preventDefault(); // Evita el comportamiento predeterminado del enlace
-                // Obtiene el destino del enlace a través del atributo href
-                var target = this.getAttribute('href');
-                // Utiliza el método 'scrollIntoView' para desplazarse suavemente hacia el destino
-                document.querySelector(target).scrollIntoView({
-                    behavior: 'smooth'
-                });
+        modalLinks.forEach(function (link) {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+
+                // Cierra el modal
+                var modal = bootstrap.Modal.getInstance(document.getElementById('navbModal'));
+                modal.hide();
+
+                // Espera un breve momento para que el modal se cierre completamente
+                setTimeout(function () {
+                    // Realiza el scroll a la sección correspondiente
+                    var targetId = link.getAttribute('href');
+                    var targetElement = document.querySelector(targetId);
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }, 300);
             });
-        }
+        });
     },
 
     clickBoton: function () {
@@ -149,7 +153,6 @@ const Vista = {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-
     Vista.motrarElmentosPagina()
     Controlador.transitionSmooth();
     Controlador.clickBoton()

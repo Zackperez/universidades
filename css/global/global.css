@@ -8,10 +8,12 @@
     list-style: none;
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
+    scroll-behavior: smooth;
 }
 
 a, button{
     cursor: pointer;
+    text-decoration: none;
 }
 
 button{

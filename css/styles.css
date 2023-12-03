@@ -1,5 +1,71 @@
 @import url(./global/global.css);
+.fa-bars{
+    color: black;
+}
+.hero header {
+    height: 10vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
 
+.hero header .container-fluid {
+    display: flex;
+    padding: 0 5vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media(max-width:992px) {
+   .hero  header .container-fluid {
+        padding: 0 5%;
+    }
+}
+
+.hero header .navb-logo img {
+    height: 10vh;
+    width: auto;
+}
+
+.hero header .navb-items {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    letter-spacing: 3px;
+}
+
+.hero header .item {
+    text-align: center;
+    margin-inline: 5%;
+    font-size: 17px;
+    padding: 2px 0;
+    transition: all .1s ease;
+    cursor: pointer;
+}
+.hero header .item a{
+    color: #191919;
+    font-size: 1.5vw;
+    text-decoration: none;
+}
+.hero header .item a:hover {
+    color: #6C63FF;
+}
+
+.hero header .mobile-toggler {
+
+    font-size: 30px;
+}
+/* modal */
+
+.modal-dialog {
+    margin: 0;
+    width: 430vw;
+
+}
+
+/*Division*/
 #texto_fecha {
     font-weight: bold;
 }
@@ -18,26 +84,9 @@
     background-color: #d33;
     color: #ffffff;
 }
-
-.hero nav {
-    position: fixed;
-    width: 90vw;
-    border-radius: 0.5vw;
-    background-color: #ffffff;
-}
-
-.hero nav .logo-equiti {
-    display: flex;
-    justify-content: center;
-}
-
-.hero nav .logo-equiti img {
-    height: 10vh;
-    width: auto;
-}
-
+/*Sección principal*/
 .hero .contenedor .pagina-principal {
-    padding: 3vw 0 0 0;
+    /* padding: 3vw 0 0 0; */
     display: grid;
     grid-template-areas:
         "textos imagen"
@@ -56,37 +105,6 @@
 
 .pagina-principal img {
     height: 20vh;
-}
-
-.hero .menu-principal {
-    display: flex;
-    padding: 0 5vw;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.hero .menu-principal .logo-equiti {
-    display: flex;
-    align-items: center;
-}
-
-.hero .menu-principal .logo-equiti img {
-    height: 10vh;
-}
-
-.hero .menu-principal .enlaces {
-    display: flex;
-    column-gap: 2vw;
-}
-
-.hero .menu-principal .enlaces a {
-    color: #191919;
-    font-size: 1.8vw;
-}
-
-.hero .menu-principal .enlaces a:hover {
-    color: #6C63FF;
 }
 
 .pagina-principal .lado-izq {
@@ -163,18 +181,21 @@
     flex-direction: column;
 }
 
-.hero .contenedor .programas .titulo {
+.hero .contenedor .programas .titulo { 
+    padding: 2vw 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4vh;
+  
+}
+.hero .contenedor .programas .titulo h2{
+    font-size: 3vw;
     text-align: center;
-    padding: 2vw 0;
 }
 
 .hero .contenedor .programas .contenido-programas {
     display: flex;
-    padding: 5vw;
+    padding: 2vw 5vw;
     column-gap: 2vw;
 }
 
@@ -284,7 +305,7 @@
     flex-direction: column;
     padding: 1vw;
     width: 25vw;
-    height: 30vh;
+    height: 35vh;
     background-color: #f2f2f2;
     border-radius: 0.5vw;
     justify-content: space-around;
@@ -986,12 +1007,112 @@ footer .contenedor .logo .imagen img {
 
         width: 30vw;
     }
+    /*Modal*/
+    /*Modal*/
+    .modal-dialog {
+        width: 82%;
+    }
+    /*Lenguajes*/
+.titulo-habilidades h4{
+    font-size: 4.5vw;
+}
+.tarjeta-lenguajes{
+    height: 20vh;
+}
+.imagenes-tarjeta img{
+    height: 12vh;
+}
+.icono__titulo{
+    font-size: 3.5vw;
+}
+/*modal*/
+.modal-dialog {
+    width: 82%;
+}
+.modal-content {
+    border-radius: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #ffffff;
+}
+.modal-header {
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    margin: 0 auto;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #fefefe;
+}
 
+.modal-header img {
+    height: 10vh;
+    margin-top: 17.5px;
+}
 
+.modal-header .btn-close {
+    background: transparent;
+    opacity: 1;
+}
 
+.modal-header i {
+    color: #000000;
+    font-size: 30px;
+}
+.modal-body {
+    width: 88%;
+    margin: 0 auto;
+    padding: 75px 0 0 0;
+    flex: unset;
+}
+.modal-body .modal-line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 7px 0;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: all .5s ease;
+    color: #000000;
+    border-bottom: 1px solid #000000;
+}
 
+.modal-body .modal-line:hover {
 
+    color: #999999;
+    border-bottom: 1px solid #999999;
+}
 
+.modal-line a {
+
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    color: #000000;
+}
+
+.modal-line i {
+    color: currentColor;
+    font-size: 30px;
+    width: 35px;
+    margin-right: 15px;
+    padding: 0 0 3px 3px;
+}
+.mobile-modal-footer {
+
+    width: 87%;
+    margin: 0 auto;
+    padding: 20% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    color: #000000;
+}
+.mobile-modal-footer i{
+    color: black;
+}
 
 }
