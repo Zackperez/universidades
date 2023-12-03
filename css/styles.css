@@ -246,6 +246,7 @@
 
 .hero .contenedor .programas .contenido-programas .programa .contenido .descripcion p {
     line-height: 2em;
+    width: 40vw;
 }
 
 .hero .contenedor .programas .contenido-programas .programa .formulario {
@@ -747,13 +748,6 @@ footer .contenedor .logo .imagen img {
         font-size: 2.5vh;
      }
 
-
-    
-
-    .hero .menu-principal {
-        height: 10vh;
-    }
-
     .hero .menu-principal .logo-equiti img {
         height: 8vh;
     }
@@ -769,9 +763,12 @@ footer .contenedor .logo .imagen img {
             "ola";
     }
 
-
+    
+    .pagina-principal .lado-der .img-central {
+        padding: 5vw 0;
+    }
     .pagina-principal .lado-der .img-central img {
-        height: 10vh;
+            height: 10vh;
     }
 
     .pagina-principal .lado-izq .texto .boton button {
