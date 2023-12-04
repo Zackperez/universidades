@@ -175,6 +175,7 @@
 /*Sección programas*/
 .hero .contenedor .programas {
     display: flex;
+    padding: 5vw 0;
     flex-direction: column;
 }
 
@@ -186,7 +187,8 @@
   
 }
 .hero .contenedor .programas .titulo h2{
-    font-size: 3vw;
+    font-size: 6vh;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -203,6 +205,7 @@
         "contenido"
         "link";
     padding: 2vw 0;
+    align-content: space-between;
     box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
 
 }
@@ -256,9 +259,10 @@
 }
 
 .hero .contenedor .programas .contenido-programas .programa .formulario a {
-    text-align: left;
-    letter-spacing: 0.15em;
-    font-size: 3vh;
+    padding: 0.5vw 5vw;
+    background-color: #6C63FF;
+    color: #ffffff;
+    font-size: 2.5vh;
 }
 
 /*Seccion Tutorial*/
@@ -277,14 +281,14 @@
         "tutorial";
     padding: 5vw;
     align-items: center;
-    height: 50vh;
     justify-content: center;
     justify-items: center;
     row-gap: 5vh;
 }
 
-.hero .contenedor .tutorial .contenido .titulo {
-    font-size: 4vh;
+.hero .contenedor .tutorial .contenido .titulo h2{
+    font-size: 6vh;
+    font-weight: bold;
 }
 
 .hero .contenedor .ola2 {
@@ -303,7 +307,7 @@
     flex-direction: column;
     padding: 1vw;
     width: 25vw;
-    height: 35vh;
+    height: 40vh;
     background-color: #f2f2f2;
     border-radius: 0.5vw;
     justify-content: space-around;
@@ -337,7 +341,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 2vw 5vw;
     row-gap: 5vh;
 }
 
@@ -347,6 +350,7 @@
 
 .hero .contenedor .informacion .contenido .titulo h2 {
     font-size: 6vh;
+    font-weight: bold;
 }
 
 .hero .contenedor .informacion .contenedor {
@@ -691,6 +695,7 @@ footer .contenedor .logo .imagen img {
 
     .hero .contenedor .programas-responsive {
         display: block;
+        padding: 5vh 0;
     }
 
     .hero .contenedor .programas-responsive .contenido-programas {
@@ -708,13 +713,14 @@ footer .contenedor .logo .imagen img {
     .hero .contenedor .programas-responsive .titulo h2{ 
         font-size: 6vh;
         text-align: center;
+        font-weight: bold;
     }
 
     .hero .contenedor .programas-responsive .contenido-programas .programa {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        row-gap: 3vh;
+        row-gap: 6vh;
         padding: 5vw 0;
         box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
     }
@@ -738,7 +744,7 @@ footer .contenedor .logo .imagen img {
     }
 
     .hero .contenedor .programas-responsive .contenido-programas .programa .contenido .descripcion p {
-        font-size: 2.2vh;
+        font-size: 2.7vh;
     }
 
     .hero .contenedor .programas-responsive .contenido-programas .programa .formulario a {
@@ -746,6 +752,7 @@ footer .contenedor .logo .imagen img {
         background-color: #6C63FF;
         color: #ffffff;
         font-size: 2.5vh;
+        border-radius: 2vw;
      }
 
     .hero .menu-principal .logo-equiti img {
@@ -761,6 +768,7 @@ footer .contenedor .logo .imagen img {
             "textos"
             "imagen"
             "ola";
+            row-gap: 5vh;
     }
 
     
@@ -774,6 +782,7 @@ footer .contenedor .logo .imagen img {
     .pagina-principal .lado-izq .texto .boton button {
         padding: 2vh 8vw;
         font-size: 2.4vh;
+        border-radius: 2vw;
     }
 
     .pagina-principal .ola {
@@ -831,8 +840,9 @@ footer .contenedor .logo .imagen img {
         text-align: center;
     }
 
-    .tutorial .contenido .titulo h2 {
+    .hero .contenedor .tutorial .contenido .titulo h2 {
         font-size: 5vh;
+        font-weight: bold;
     }
 
     .hero .contenedor .tutorial .cuadros {
@@ -861,6 +871,7 @@ footer .contenedor .logo .imagen img {
         padding: 2vh 8vw;
         font-size: 2.3vh;
         color: #ffffff;
+        border-radius: 2vw;
     }
 
     /*Seccion información*/
@@ -886,11 +897,14 @@ footer .contenedor .logo .imagen img {
     }
 
     .hero .contenedor .informacion .contenido .contenedor .concepto .texto p {
-        font-size: 2.5vh;
+        font-size: 2.8vh;
+        text-align: center;
     }
 
     .hero .contenedor .aliados .contenido .titulo .secundario p {
-        font-size: 2.5vh;
+        font-size: 2.8vh;
+        text-align: center;
+
     }
 
     /*Seccion Aliados*/
@@ -900,8 +914,8 @@ footer .contenedor .logo .imagen img {
         justify-content: center;
     }
 
-    .hero .contenedor .aliados .contenido .titulo h1 {
-        font-size: 3vh;
+    .hero .contenedor .aliados .contenido .titulo .principal h1 {
+        font-size: 5vh;
     }
 
     .aliados .contenido .universidades .contenedor-universidades {
@@ -930,6 +944,7 @@ footer .contenedor .logo .imagen img {
         width: 40vw;
         height: 5vh;
         font-size: 2.2vh;
+        border-radius: 2vw;
     }
 
     .hero .contenedor .aliados .contenido .titulo .secundario {
@@ -976,6 +991,7 @@ footer .contenedor .logo .imagen img {
         width: 55vw;
         height: 5vh;
         font-size: 2.2vh;
+        border-radius: 2vw;
     }
 
     footer .contenedor .redes-sociales {
